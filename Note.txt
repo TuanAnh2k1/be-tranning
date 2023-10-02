@@ -1,0 +1,10 @@
+#update colum data:
+    1. php artisan make:migration file_name -> trong after
+    2. Thêm colums trong public function up()
+    3. php artisan migrate --path=database/migrations/after
+    4. Thêm new colums vào file migrations cũ
+
+#issue:
+    - chọn nhiều user -> mảng các id -> delete user
+    - toastr message
+    - gửi id không gắn lên url

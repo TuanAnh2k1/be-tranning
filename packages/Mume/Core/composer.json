@@ -1,0 +1,39 @@
+{
+    "name": "mume/core",
+    "license": "MIT",
+    "description": "Module Core",
+    "authors": [
+        {
+            "name": "Nam Tran",
+            "email": "gemkids275@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mume\\Core\\": "src/"
+        },
+        "files": [
+            "src/Helpers/AuthHelper.php",
+            "src/Helpers/StringHelper.php",
+            "src/Helpers/CookieHelper.php",
+            "src/Helpers/DateHelper.php",
+            "src/Helpers/ArrayHelper.php",
+            "src/Helpers/FileHelper.php",
+            "src/Helpers/StringHelper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mume\\Core\\Providers\\CoreServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "spatie/laravel-fractal": "^6.0"
+    }
+}

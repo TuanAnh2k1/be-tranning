@@ -1,0 +1,27 @@
+{
+    "name": "mume/product",
+    "license": "MIT",
+    "description": "Module Product",
+    "authors": [
+        {
+            "name": "Nam Tran",
+            "email": "gemkids275@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mume\\Product\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mume\\Product\\Providers\\ProductServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-sproduct": true
+}
